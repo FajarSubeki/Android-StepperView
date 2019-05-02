@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_email"
+        android:layout_gravity="right"
+        android:theme="@style/ToolbarColoredBackArrow"
+        />
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_1"
+        android:layout_marginTop="100dp"
+        android:textSize="28dp"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/lbl_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_2"
+        android:layout_below="@+id/txt_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="13dp"/>
+
+    <EditText
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_address"
+        android:textColorHint="@android:color/black"
+        android:textStyle="italic"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="43dp"
+        android:inputType="textEmailAddress"
+        android:textSize="12dp"
+        android:hint="@string/enter"/>
+
+    <Button
+        android:id="@+id/btnNextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_email"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/tv_email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="130dp"
+        android:background="@color/colorButton"/>
+
+</RelativeLayout>

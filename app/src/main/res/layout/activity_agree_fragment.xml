@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_agree"
+        android:layout_gravity="right"
+        android:theme="@style/ToolbarColoredBackArrow"
+        />
+
+    <TextView
+        android:id="@+id/txt_little"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_3"
+        android:layout_marginTop="100dp"
+        android:textSize="28dp"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/txt_account"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your account will be created soon! Don't forget to review our tearm and Condition below"
+        android:layout_below="@+id/txt_little"
+        android:textSize="11dp"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"/>
+
+    <LinearLayout android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txt_account"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/txt_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_4"
+            android:textSize="14dp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginLeft="55dp"/>
+
+        <TextView
+            android:id="@+id/txt_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_5"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_marginLeft="3dp"/>
+
+        <TextView
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_check_circle"
+            android:layout_marginLeft="7dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNextAgree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_email"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorButton"/>
+
+</RelativeLayout>

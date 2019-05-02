@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_region"
+        android:layout_gravity="right"
+        android:theme="@style/ToolbarColoredBackArrow"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="25dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:layout_marginTop="100dp"
+                android:textSize="28dp"
+                android:singleLine="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorWhite" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNationally"
+                android:ems="10"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/txt_title"
+                android:text="Indonesia"
+                android:hint="@string/label_national"
+                android:textColor="@color/colorWhite"
+                android:textSize="17dp"
+                app:met_textColor="@color/colorWhite"
+                app:met_textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="text"
+                app:met_floatingLabel="normal"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAddress"
+                android:ems="10"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/tvNationally"
+                android:hint="@string/label_address"
+                android:textColor="@color/colorWhite"
+                android:textSize="17dp"
+                app:met_textColor="@color/colorWhite"
+                app:met_textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="text|textMultiLine"
+                app:met_floatingLabel="normal"/>
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_defaultNameCode="ID"
+                android:backgroundTint="@color/colorWhite"
+                android:layout_below="@id/tvAddress"
+                android:layout_marginTop="10dp"
+                app:ccp_contentColor="@color/colorWhite"
+                app:ccp_showNameCode="false"
+                android:id="@+id/ccp"  />
+
+            <EditText
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAddress"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Ex : 08xxxxxxxxxx"
+                android:layout_marginTop="16dp"
+                android:textStyle="italic"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/ccp"
+                android:maxLength="15"
+                android:inputType="phone"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="2dp"
+                android:background="@color/colorWhite"
+                android:layout_below="@id/ccp"/>
+
+            <Button
+                android:id="@+id/btnNextRegion"
+                android:textColor="@color/colorWhite"
+                android:text="Next"
+                android:layout_width="match_parent"
+                android:layout_marginTop="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ccp"
+                android:background="@color/colorButton"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

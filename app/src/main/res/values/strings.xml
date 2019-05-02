@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">QtimeTry</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_hospital">Hospital</string>
+    <string name="title_que">Queueing</string>
+    <string name="title_chat">Chat</string>
+    <string name="name_user">John Carter</string>
+    <string name="email_user">johnCarter@gmail.com</string>
+    <string name="image_text">UPLOAD YOUR PHOTO PROFILE</string>
+    <string name="phone_hint">Phone Number</string>
+    <string name="submit">Submit</string>
+    <string name="invalid_phone_number">Please enter a valid phone number</string>
+    <string name="valid_phone_number">Valid phone numbers!</string>
+    <string name="today">Today</string>
+
+    <string name="button_login">Login</string>
+    <string name="button_signup">I Don\'t Have Account. Sign Up NOW</string>
+    <string name="pass">PASSWORD</string>
+    <string name="label_password">Create a password</string>
+    <string name="tips_password">Tips: Use a mix of letters, numbers, and sysmbols to create a strong password</string>
+    <string name="button_pass">next</string>
+    <string name="biodata_title">What\'s your name?</string>
+    <string name="label_firstname">FIRST NAME</string>
+    <string name="label_lastname">LAST NAME</string>
+    <string name="text_firstname"><i>Enter your first name</i></string>
+    <string name="text_lastname"><i>Enter your last name</i></string>
+    <string name="label_datebirth">DATE OF BIRTH</string>
+    <string name="text_dateresult"><i>Choose your date of birth</i></string>
+
+    <string name="title">Where are you from?</string>
+    <string name="label_national">Nationality</string>
+    <string name="label_address">Address</string>
+    <string name="label_phone">Phone Number</string>
+    <string name="title_1">Your email address</string>
+    <string name="title_2">EMAIL ADDRESS</string>
+    <string name="title_3">A little bit more!</string>
+    <string name="title_4">I agree to Queue</string>
+    <string name="title_5">TERMS &amp; CONDITION </string>
+    <string name="enter">Enter your email address</string>
+    <string name="btn_email">NEXT</string>
+
+    <string name="greeting">Hi, %s :)</string>
+</resources>

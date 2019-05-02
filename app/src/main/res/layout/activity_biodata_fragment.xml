@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_profile"
+        android:layout_gravity="right"
+        android:theme="@style/ToolbarColoredBackArrow"
+        />
+
+    <TextView
+        android:id="@+id/bio_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/biodata_title"
+        android:layout_marginTop="100dp"
+        android:textSize="25dp"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/lbl_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bio_title"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/label_firstname"
+        android:textSize="12dp"
+        android:textColor="@color/colorWhite"/>
+
+    <EditText
+        android:id="@+id/tv_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/lbl_firstname"
+        android:padding="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/text_firstname"
+        android:textSize="13dp"
+        android:textColorHint="@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
+        android:inputType="textCapSentences"
+        android:maxLength="30"
+        android:drawableRight="@drawable/ic_check_circle"/>
+
+    <TextView
+        android:id="@+id/lbl_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_firstname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/label_lastname"
+        android:textSize="12dp"
+        android:textColor="@color/colorWhite"/>
+
+    <EditText
+        android:id="@+id/tv_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_below="@+id/lbl_lastname"
+        android:hint="@string/text_lastname"
+        android:backgroundTint="@color/colorWhite"
+        android:textSize="13dp"
+        android:textColorHint="@color/colorHint"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:inputType="textCapSentences"
+        android:maxLength="30"/>
+
+    <TextView
+        android:id="@+id/lbl_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lastname"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/label_datebirth"
+        android:backgroundTint="@color/colorWhite"
+        android:textSize="12dp"
+        android:textColor="@color/colorWhite"/>
+
+    <com.example.stepper.Helper.DatePickerView
+        android:id="@+id/dp_birth"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:padding="5dp"
+        android:backgroundTint="@color/colorWhite"
+        android:drawableRight="@drawable/ic_calendar_alt"
+        android:layout_below="@+id/lbl_birth"
+        android:hint="@string/text_dateresult"
+        android:textSize="13dp"
+        android:textColorHint="@color/colorHint" />
+
+    <Button
+        android:id="@+id/btnNextBiodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_pass"
+        android:layout_below="@id/dp_birth"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15dp"/>
+
+</RelativeLayout>
